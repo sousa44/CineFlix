@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- font awesome 5-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+
+    <!--css-->
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+
+
+
+        body {
+            background: url(fundoPrincipal.png);
+            background-size: contain;
+        }
+
+        /*hero=main */
+        #hero-main {
+
+            padding-top: 50px;
+
+        }
+
+        .hero-main__content {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .main-title {
+            font-size: 56px;
+            font-weight: bolder;
+            text-shadow: 2px 2px 2px #000;
+            color: #FF0000;
+        }
+
+        .main-text {
+            font-size: 23px;
+            text-shadow: 2px 2px 2px #000;
+            color: #fff;
+        }
+
+        .fa-search {
+            font-size: 20px;
+            color: #fff;
+
+        }
+
+        .input-group {
+            box-shadow: 2px 2px 2px #000;
+            border-radius: 10px;
+            border: 1px solid #fff;
+        }
+
+        .input-group input::placeholder {
+
+            color: #444444;
+
+        }
+
+        .input-group span {
+            background: linear-gradient(135deg, #2c2c2c, #1a1a1a);
+            border-radius: 10px;
+        }
+
+        /*main-filmes */
+
+        #main-filmes {
+            margin-top: 100px;
+
+            padding: 20px;
+            background: linear-gradient(135deg, #0f2027ba, #203a4375, #f4f7fa54);
+            border-radius: 10px;
+        }
+
+        .main-filmes__header h5 {
+            font-size: 25px;
+            color: #fff;
+        }
+
+        .main-filmes__containerFilmes {
+            border-top: 1px solid #dcdcdc;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 20px;
+            color: #fff;
+            flex-wrap: wrap;
+
+
+
+        }
+
+
+
+        /* media queries*/
+
+        /* X-Small devices (portrait phones, less than 576px)*/
+        @media (max-width: 575.98px) {
+            .main-filmes__containerFilmes {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .main-filmes__containerFilmes div {
+                margin-top: 20px;
+
+            }
+        }
+
+        /* Small devices (landscape phones, less than 768px)*/
+        @media (max-width: 767.98px) {
+            .main-filmes__containerFilmes {
+                flex-direction: column;
+                align-items: center;
+            }
+
+
+            .main-filmes__containerFilmes div {
+                margin-top: 20px;
+
+            }
+        }
+
+        /* Medium devices (tablets, less than 992px)*/
+        @media (max-width: 991.98px) {}
+
+        /*Large devices (desktops, less than 1200px)*/
+        @media (max-width: 1199.98px) {}
+
+        /* X-Large devices (large desktops, less than 1400px)*/
+        @media (max-width: 1399.98px) {}
+    </style>
+
+</head>
+
+<body>
+
+    <header id="hero-main"> <!--hero-main-->
+
+        <div class="hero-main__content"> <!--hero-main__content-->
+
+            <div class="boxMain-title">
+
+                <h1 class="main-title">CineFlix</h1>
+
+            </div>
+
+            <div class="boxMain-text">
+                <p class="main-text">Explore os Melhores Filmes e Séries</p>
+
+            </div>
+
+            <div class="boxMain-input w-50">
+
+                <div class="input-group">
+
+                    <input type="text" class="form-control" placeholder="Buscar por nome..."
+                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <span class="input-group-text icon-lupa p-3" id="basic-addon2"> <i class="fas fa-search"></i></span>
+
+                </div>
+
+
+            </div>
+
+        </div><!--hero-main__content-->
+
+    </header><!--hero-main-->
+
+
+    <div class="container"> <!--container-->
+        <main id="main-filmes"> <!--main-filmes-->
+
+            <header class="main-filmes__header"> <!--main-filmes__header-->
+
+                <h5>Populares</h5>
+
+            </header><!--main-filmes__header-->
+
+            <section class="main-filmes__containerFilmes"> <!--main-filmes__containerFilmes-->
+
+
+
+
+
+
+            </section><!--main-filmes__containerFilmes-->
+
+        </main> <!--main-filmes-->
+
+    </div><!--container-->
+
+
+
+    <!-- scripts-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
+        defer></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
